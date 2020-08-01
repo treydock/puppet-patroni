@@ -49,6 +49,7 @@ class patroni::params {
   $consul_verify = false
 
   $use_etcd      = false
+  $use_etcdv3    = false
   $etcd_host     = '127.0.0.1:2379'
   $etcd_protocol = 'http'
 

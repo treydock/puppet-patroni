@@ -157,9 +157,13 @@ watchdog:
   mode: <%= @watchdog_mode %>
   device: <%= @watchdog_device %>
   safety_margin: <%= @watchdog_safety_margin %>
-<% if @use_etcd -%>
+<% if @use_etcd || @use_etcdv3 -%>
 
+<%- if @use_etcdv3 %>
+etcd3:
+<%- else -%>
 etcd:
+<%- end -%>
   host: <%= @etcd_host %>
 <% unless @etcd_hosts.empty? -%>
   hosts:
