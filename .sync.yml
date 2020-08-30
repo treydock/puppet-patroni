@@ -42,7 +42,7 @@ spec/acceptance/nodesets/ubuntu-1604.yml:
 spec/acceptance/nodesets/ubuntu-1804.yml:
   delete: true
 spec/acceptance/nodesets/debian-8.yml:
-  manage: false
+  delete: true
 spec/acceptance/nodesets/debian-9.yml:
   manage: false
 spec/acceptance/nodesets/debian-10.yml:
